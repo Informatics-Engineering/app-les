@@ -17,7 +17,7 @@ use App\Http\Controllers\Guru\DashboardController as guru;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('layouts.tempo');
 });
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
